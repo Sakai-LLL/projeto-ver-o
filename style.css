@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+  }
+  
+  /* Formulário de busca */
+  .busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .busca input[type="search"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .busca button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0a84ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .busca button:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Resultado principal */
+  .resultado {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+  
+  .resultado .titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* Informações */
+  .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Temperatura */
+  .temp {
+    text-align: center;
+  }
+  
+  .tempTitulo {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #aaa;
+  }
+  
+  .tempInfo {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .temp img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Vento */
+  .vento {
+    text-align: center;
+  }
+  
+  .ventoTitulo {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #aaa;
+  }
+  
+  .ventoInfo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ventoArea {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #444;
+    border-radius: 50%;
+  }
+  
+  .ventoPorto {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #0af;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Aviso */
+  .Aviso {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #ff4444;
+    text-align: center;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
